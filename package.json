@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "workspaces": [
+    "functions"
+  ],
+  "scripts": {
+    "format:staged": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format:staged"
+    }
+  }
+}
